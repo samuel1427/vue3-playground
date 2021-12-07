@@ -19,7 +19,7 @@ export default {
 		const onButtonClick = () => {
 			store.dispatch("utility/increment", 1);
 		};
-		return { count, doubleCount, todoLength, onButtonClick };
+		return { count, doubleCount, onButtonClick };
 	},
 };
 </script>
