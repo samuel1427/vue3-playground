@@ -3,7 +3,9 @@
 		<router-link to="/">Home</router-link> |
 		<router-link to="/todo">Todo</router-link>
 	</div>
-	<router-view />
+	<div class="responsive">
+		<router-view />
+	</div>
 </template>
 
 <script>
@@ -14,4 +16,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.responsive {
+	margin: 20px 10%;
+}
+
+@media (max-width: 768px) {
+	.responsive {
+		margin: 20px 5%;
+	}
+}
+</style>
